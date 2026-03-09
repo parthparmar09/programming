@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="getBtn">Display</button>
+    <button id="postBtn">Send Data</button>
+    <div class="container"></div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      const cont = $(".container");
+      function getData() {
+        // $.ajax({
+        //   url : "https://dummy.restapiexample.com/api/v1/employees",
+        //   type : "GET",
+        //   dataType : "json",
+        //   beforeSend : function () {
+        //     console.log("starting the request...");
+        //   },
+        //   complete : function(){
+        //     console.log("completed the request.");
+        //   },
+        //   success: function(data,statusText,xhr){
+        //     console.log(statusText, xhr , "\nData:" , data);
+
+        //     let dataStr = ""
+        //     data.data.forEach(item =>{
+        //       dataStr += `<h1>${item.id}.${item.employee_name} ==> ${item.employee_salary}</h1>`
+        //     })
+
+        //     cont.html(dataStr);
+
+        //   },
+        //   error : function (xhr, statusText, responseText){
+        //     console.log(xhr, statusText, responseText);
+        //     cont.html(`<h1>${xhr.status}.${statusText}</h1>`);
+        //   }
+        // })
+
+        // $.get("https://dummy.restapiexample.com/api/v1/employees" , function(xhr,statusText,responseText){
+        //   console.log(xhr, statusText, responseText);
+        // }).done((data,status,xhr) => {
+        //   console.log("In done =>",data,status, xhr);
+        // }).fail((xhr,status,error) =>{
+        //   console.log("In fail =>",xhr,status,error);
+        // }).always((xhr,status,error) => {
+        //   console.log("In always =>", xhr,status,error);
+        // })
+
+
+        // cont.load('http://localhost:5500/1_selection_traversing.html #cont2 .list-item' , (data,response,xhr) => {
+        //   console.log("Data:",data, "Res:",response,"XHR:",xhr);
+        //   if(xhr.status == 404){
+        //     cont.html(data);
+        //   }
+        // });
+
+
+      //   $.ajax({
+      //     url : "dummy.xml",
+      //     type : "GET",
+      //     dataType : "xml",
+      //     beforeSend : function () {
+      //       console.log("starting the request...");
+      //     },
+      //     complete : function(){
+      //       console.log("completed the request.");
+      //     },
+      //     success: function(data,statusText,xhr){
+      //       console.log(statusText, xhr , "\nData:" , data);
+
+      //       let dataStr = "";
+      //       $(data).find('sObject').each(function(){
+      //         dataStr += `<h3>${$(this).find('Name').text()}--${$(this).find('Description').text()}</h3>`
+      //       })
+
+      //       cont.html(dataStr);
+
+      //     },
+      //     error : function (xhr, statusText, responseText){
+      //       console.log(xhr, statusText, responseText);
+      //       cont.html(`<h1>${xhr.status}.${statusText}</h1>`);
+      //     }
+
+      //   })
+
+       $.getScript("app.js" , function(xhr,statusText,responseText){
+          console.log(xhr, statusText, responseText);
+        }).done((data,status,xhr) => {
+          console.log("In done =>",data,status, xhr);
+        }).fail((xhr,status,error) =>{
+          console.log("In fail =>",xhr,status,error);
+        }).always((xhr,status,error) => {
+          console.log("In always =>", xhr,status,error);
+        })
+    }
+      function postData() {
+
+      }
+      $("#getBtn").click(getData);
+      $("#postBtn").click(postData);
+    });
+  </script>
+</html>

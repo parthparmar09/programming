@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sObjects>
+   <sObject>
+      <Name>Xytrex Co.</Name>
+      <Description>Industrial Cleaning Supply Company</Description>
+      <Account>ABC15797531</Account>
+   </sObject>
+   <sObject>
+      <Name>Watson and Powell, Inc.</Name>
+      <Description>Law firm. New York Headquarters</Description>
+      <Account>ABC24689753</Account>
+   </sObject>
+   <sObject>
+      <Name>PP and 0pp</Name>
+      <Description>Gaming Company</Description>
+      <Account>ABC24689758</Account>
+   </sObject>
+</sObjects>

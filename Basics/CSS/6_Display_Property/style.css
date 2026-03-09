@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+}
+
+#cont1{
+    border: none;
+    display: inline;
+    /* margin padding only have effect on first and last line of the content */
+    margin: 400px;
+    padding: 40px;
+}
+#cont2{
+    visibility: hidden;
+    margin: 40px;
+    padding: 40px;
+
+}
+#cont3{
+    display: inline-block;
+    margin: 40px;
+    padding: 40px;
+
+}
+#cont4{
+    display: none;
+    margin: 40px;
+    padding: 40px;
+}
+#cont5{
+    display: block;
+    margin: 40px;
+    padding: 40px;
+}

@@ -1,0 +1,42 @@
+{
+  "Dimensions & Capacity": {
+    "Ground clearance": "165 mm",
+    "Seating capacity": "5 units",
+    "Boot space": "280 litres",
+    "Number of seating rows": "2 units",
+    "Fuel tank capacity": "45 litres",
+    "Alloy wheels": "Yes units",
+    "Front tyre size": "185/60 R15",
+    "Spare wheel": "Yes",
+    "Number of doors": "5 units",
+    "Gross weight": "1500 kgs"
+  },
+  "Engine & Transmission": {
+    "Drivetrain": "Front Wheel Drive",
+    "Gear box": "5-Speed",
+    "Number of gears": "5 units",
+    "Displacement": "1198 cc",
+    "Number of cylinders": "3 units",
+    "Valve/cylinder (configuration)": "4 units",
+    "Limited slip differential (LSD)": "No",
+    "Mild hybrid": "No",
+    "Turbocharger": "No"
+  },
+  "Fuel & Performance": {
+    "Mileage (ARAI)": "16.2 kmpl",
+    "Top speed": "165 kmph",
+    "Max power (bhp)": "74bhp@5400rpm",
+    "Max torque (Nm)": "110Nm@3000-4300rpm",
+    "Sport mode": "No",
+    "Multi drive modes": "No"
+  },
+  "Suspension, Steering & Brakes": {
+    "Suspension front type": "MacPherson Strut",
+    "Suspension rear type": "Semi Independent Trailing Arm",
+    "Steering adjustment type": "Tilt & Telescopic",
+    "Front brake type": "Disc",
+    "Rear brake type": "Drum",
+    "Steering type": "Power",
+    "Minimum turning radius": "4970 mm"
+  }
+}

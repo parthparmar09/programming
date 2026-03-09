@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+  </head>
+  <body>
+    <!-- <style>
+        *{
+            border: 1px solid black;
+        }
+    </style>     -->
+    <h1 id="heading">Links in HTML</h1>
+    <div class="container">
+      <h3>
+        There are many ways to create HMTL links of many types. The most used
+        ones are :
+      </h3>
+      <ul>
+        <li>
+          <p>Simple text link: <a href="https://www.google.com">Click me</a></p>
+        </li>
+        <li>
+          <p>
+            Can wrap anything inside the a tag and make it a link, for ex:
+            images
+            <a href="https://www.google.com"
+              ><img src="./gateway.jpg" alt="logo" height="50" width="50"
+            /></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            Relative links - to open pages within the same website
+            <a href="./basic_tags.html">A HTML page</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            Email links - opens default email client with a pre-filled email
+            address <a href="mailto:pp073522@gmail.com">Mail me</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            Telephone links - initiate a phone call when clicked on mobile
+            devices <a href="tel:+919900990099">Call me</a>
+          </p>
+        </li>
+        <li>
+          <p>Empty links - doesn't do anything <a href="#">Click here</a></p>
+        </li>
+        <li>
+          <p>
+            Link to a specific section in a page by its id
+            <a href="#heading">Go to top</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            Link to download a file
+            <a href="./gateway.jpg" download>Download image</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>There are many ways to open HMTL links in many ways using <em>target</em> attribute :</h3>
+      <ul>
+        <li>
+            <p>Opens in the same frame or window(default): <a href="https://www.google.com">_self</a></p>
+        </li>
+        <li>
+            <p>Opens in a new, unnamed browser window or tab: <a href="https://www.google.com" target="_blank">_blank</a></p>
+        </li>
+        <li>
+            <p>Opens in the parent frame or window of the current frame or window: <a href="https://www.google.com" target="_parent"></a>_parent</p>
+        </li>
+        <li>
+            <p>Opens in the top-level frame or window, replacing all other frames or windows, if applicable: <a href="https://www.google.com" target="_top">_top</a></p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

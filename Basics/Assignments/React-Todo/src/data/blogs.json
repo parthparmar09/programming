@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "title": "Getting Started with React",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/react_image.jpg",
+      "url": "https://example.com/react-getting-started"
+    },
+    {
+      "id": 2,
+      "title": "Advanced CSS Techniques",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/css_image.jpg",
+      "url": "https://example.com/advanced-css-techniques"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript ES6+ Features",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/js_image.jpg",
+      "url": "https://example.com/javascript-es6-features"
+    },
+    {
+      "id": 4,
+      "title": "Responsive Web Design Best Practices",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/responsive_image.jpg",
+      "url": "https://example.com/responsive-web-design"
+    },
+    {
+      "id": 5,
+      "title": "State Management in React Applications",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/state_management_image.jpg",
+      "url": "https://example.com/react-state-management"
+    },
+    {
+      "id": 6,
+      "title": "Introduction to Node.js",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/nodejs_image.jpg",
+      "url": "https://example.com/intro-to-nodejs"
+    },
+    {
+      "id": 7,
+      "title": "RESTful API Design Principles",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/restful_api_image.jpg",
+      "url": "https://example.com/restful-api-design"
+    },
+    {
+      "id": 8,
+      "title": "MongoDB: A NoSQL Database",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/mongodb_image.jpg",
+      "url": "https://example.com/mongodb-introduction"
+    },
+    {
+      "id": 9,
+      "title": "Introduction to GraphQL",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/graphql_image.jpg",
+      "url": "https://example.com/intro-to-graphql"
+    },
+    {
+      "id": 10,
+      "title": "Web Accessibility Guidelines",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/accessibility_image.jpg",
+      "url": "https://example.com/web-accessibility-guidelines"
+    },
+    {
+      "id": 11,
+      "title": "Vue.js: The Progressive JavaScript Framework",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/vuejs_image.jpg",
+      "url": "https://example.com/vuejs-introduction"
+    },
+    {
+      "id": 12,
+      "title": "Security Best Practices for Web Developers",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/security_image.jpg",
+      "url": "https://example.com/web-security-best-practices"
+    },
+    {
+      "id": 13,
+      "title": "Optimizing Website Performance",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/performance_image.jpg",
+      "url": "https://example.com/optimizing-website-performance"
+    },
+    {
+      "id": 14,
+      "title": "Introduction to Docker and Containerization",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/docker_image.jpg",
+      "url": "https://example.com/intro-to-docker"
+    },
+    {
+      "id": 15,
+      "title": "Modern Front-End Frameworks Comparison",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "image": "https://example.com/frameworks_image.jpg",
+      "url": "https://example.com/frontend-frameworks-comparison"
+    }
+  ]
+

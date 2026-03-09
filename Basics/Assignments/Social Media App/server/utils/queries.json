@@ -1,0 +1,30 @@
+{
+    "users": {
+        "getUser": "SELECT * FROM users WHERE email=? OR user_id=?",
+        "registerUser": "INSERT INTO users(username, email, password, image_url, bio) VALUES(?,?,?,?,?)",
+        "getUsersPosts": "SELECT p.*, u.username,u.image_url, COUNT(DISTINCT l.like_id) AS like_count, COUNT(DISTINCT c.comment_id) AS comment_count FROM   posts p LEFT JOIN   likes l ON p.post_id = l.post_id LEFT JOIN   comments c ON p.post_id = c.post_id JOIN users u ON p.user_id = u.user_id  WHERE   p.user_id = ? GROUP BY p.post_id;",
+        
+        "updateProfile" : "UPDATE users SET ",
+        "tempAdd" : "INSERT INTO tempusers(email,otp) VALUES(?,?);",
+        "tempRemove" : "DELETE FROM tempusers WHERE email = ? AND otp = ?;",
+        "changePass" : "UPDATE users SET password = ? WHERE email = ?;"
+    },
+    "posts": {
+        "getPosts" : "SELECT p.*, u.username,u.image_url, COUNT(DISTINCT l.like_id) AS like_count, COUNT(DISTINCT c.comment_id) AS comment_count FROM posts p INNER JOIN likes l ON p.post_id = l.post_id INNER JOIN comments c ON p.post_id = c.post_id INNER JOIN users u ON p.user_id = u.user_id  GROUP BY p.post_id;",
+        "getPostById": "SELECT p.*, u.username,u.image_url, COUNT(DISTINCT l.like_id) AS like_count, COUNT(DISTINCT c.comment_id) AS comment_count FROM posts p INNER JOIN likes l ON p.post_id = l.post_id INNER JOIN comments c ON p.post_id = c.post_id INNER JOIN  users u ON p.user_id = u.user_id  WHERE p.post_id = ? GROUP BY p.post_id;",
+        "getLikedPosts" : "SELECT p.*, u.username,u.image_url ,count(DISTINCT l.like_id) as like_count, count(DISTINCT c.comment_id) as comment_count  FROM likes l  JOIN posts p ON l.post_id = p.post_id  JOIN comments c ON l.post_id = c.post_id  JOIN users u ON p.user_id = u.user_id  WHERE l.user_id = ? GROUP BY p.post_id;",
+        "uploadPost" : "INSERT INTO posts (content, image_url, user_id) VALUES (?,?,?);",
+        "deletePost" : "DELETE FROM posts WHERE post_id = ? AND user_id = ?;",
+        "updatePost" : "UPDATE posts SET content = ? WHERE post_id = ? AND user_id = ?;"
+    },
+    "likes": {
+        "getPostLikes" : "SELECT * FROM likes WHERE post_id = ?",
+        "likePost" : "INSERT INTO likes(user_id,post_id) VALUES(?,?)",
+        "unlikePost" : "DELETE FROM likes WHERE user_id=? AND post_id=?"
+    },
+    "comments": {
+        "getPostComments" : "SELECT c.*,u.username,u.image_url FROM comments c JOIN users u ON c.user_id = u.user_id WHERE post_id = ?",
+        "commentPost" : "INSERT INTO comments(user_id,post_id,content) VALUES(?,?,?);",
+        "uncommentPost" : "DELETE FROM comments WHERE user_id=? AND comment_id=?;"
+    }
+}

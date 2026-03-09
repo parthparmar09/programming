@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <!-- <style>
+        *{
+            border: 1px solid black;
+        }
+    </style>     -->
+
+    <h1>HTML Form</h1>
+    <form
+      action="#"
+      enctype="application/x-www-form-urlencoded"
+      accept="UTF-8"
+      method="post"
+      target="_blank"
+    >
+      <h3>Scholarship Form</h3>
+      <div>
+        <label for="aadhar_number">Aadhar Number: </label>
+        <input
+          type="number"
+          name="aadhar_number"
+          id="aadhar_number"
+          min="000000000000"
+          max="999999999999"
+          required
+          placeholder="xxxx-xxxx-xxxx"
+        />
+      </div>
+      <br>
+      <fieldset>
+        <legend>Personal Info.</legend>
+        <div>
+          <span>
+            <label for="first_name">First Name: </label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              required
+              placeholder="your name"
+            />
+          </span>
+          <span>
+            <label for="middle_name">Middle Name: </label>
+            <input
+              type="text"
+              name="middle_name"
+              id="middle_name"
+              required
+              placeholder="father's name"
+            />
+          </span>
+          <span>
+            <label for="last_name">Last Name: </label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              required
+              placeholder="surname"
+            />
+          </span>
+        </div>
+        <div>
+            <span>
+                <label for="dob">Birth Date: </label>
+                <input type="date" name="age" id="age" min="1996-01-01" max="2002-12-31">
+            </span>
+            <span>
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age" min="18" max="25">
+            </span>
+            <span>
+                <label for="disability">Disabled?: </label>
+                <input type="checkbox" name="disability" id="disability" checked>
+            </span>
+            <br>
+            <div>
+                Gender:  
+                <input type="radio" name="gender" value="M">Male
+                <input type="radio" name="gender" value="F">Female
+            </div>
+        </div>
+    </fieldset>
+    <br>
+      <fieldset>
+        <legend>Contact Info.</legend>
+        Email: <input type="email" name="email" id="email" placeholder="example@abc.xyz" required>
+        Mobile No.: <input type="tel" name="tel" id="tel" placeholder="whatsapp number" required pattern="[6-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <fieldset>
+            <legend>Address</legend>
+            Street: <textarea name="" id="" cols="50" rows="4"></textarea>
+            <br>
+            City: <input type="text" name="city">
+            State: <input type="text" name="state">
+            Country: <select name="country" id="country" >
+                <optgroup label="Asian">
+                    <option value="china">China</option>
+                    <option value="korea">Korea</option>
+                    <option va
+                    lue="india" selected>India</option>
+                </optgroup>
+                <optgroup label="African">
+                    <option value="yuganda">Yuganda</option>
+                    <option value="africa">Africa</option>
+                    <option value="niegeria">Niegeria</option>
+                </optgroup>
+                <optgroup label="American">
+                    <option value="usa">USA</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="spain">Spain</option>
+                </optgroup>
+            </select>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Other Inputs</legend>
+        Range: <input type="range" name="range" min="100" max="1000" step="50" >
+        Color: <input type="color" name="color">
+        Time: <input type="time" name="" id="">
+        File: <input type="file" name="" id="" accept="image/*">
+        <br>
+        Password: <input type="password" name="" id="">
+      </fieldset>
+      <br>
+      <div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>

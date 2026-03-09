@@ -1,0 +1,13 @@
+version: "3"
+services:
+  client:
+    image: social-app-client:1.0
+    ports:
+      - "8080:80"
+    env_file:
+      - "./client/.env"
+  server:
+    image: social-app-server:1.0
+    environment:
+      - VITE_BASE=social-app-server:1.0
+    network_mode: host

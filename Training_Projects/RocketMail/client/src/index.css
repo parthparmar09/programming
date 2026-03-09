@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  /* border: 1px solid black; */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

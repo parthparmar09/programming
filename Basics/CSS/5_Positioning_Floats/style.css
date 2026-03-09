@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 300px;
+    border: 5px solid black;
+}
+
+#cont1{
+    background-color: aqua;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+#cont2{
+    background-color: rgb(200, 228, 95);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: -1;
+}
+
+#cont3{
+    background-color: rgb(254, 128, 203);
+    position: fixed;
+    top:0;
+    left: 50%;
+    z-index: 10;
+}
+#cont4{
+    background-color: rgb(243, 79, 79);
+    position: sticky;
+    top: 10%;
+    left: 50%;
+
+}
+#cont5{
+    background-color: rgb(48, 240, 99);
+    position: static;
+}

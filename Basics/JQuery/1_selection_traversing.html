@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery selectors and traversing</title>
+</head>
+<body>
+    <main>
+        <h1>jQuery selectors and traversing</h1>
+
+        <div class="container" id="cont1">
+            <ul id="list1">
+                <li class="list-item">List item 1</li>
+                <li class="list-item">List item 2</li>
+                <li class="list-item">List item 3</li>
+                <li class="list-item">List item 4</li>
+                <li >List item 5</li>
+                <li class="list-item">List item 6</li>
+            </ul>
+        </div>
+        <div class="container" id="cont2">
+            <ul id="list2">
+                <li class="list-item">List item 1</li>
+                <li class="list-item">List item 2</li>
+                <li class="">List item 3</li>
+                <li class="list-item">List item 4</li>
+                <li class="">List item 5</li>
+            </ul>
+        </div>
+        <div class="container" id="cont3">
+            Parent Container
+            <div class="child-container">
+                Child Container
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+    $('*').css('border', '1px solid black ');
+    $('h1').css('text-transform','capitalize');
+    $('.child-container').css('background-color', 'olive').parent().css('background-color', 'lightgreen');
+    $('#cont2').prev().css('background-color', 'lightgreen');
+    $('#cont2').next().css('font-weight', 'bolder');
+    $('#cont1').find('ul').css('list-style-type', 'square');
+
+    const childrens = $('#cont2 > ul').children();
+    console.log(childrens , childrens[2]);
+
+    $('#cont2').siblings().css('border', '5px solid green');
+    $('#list2 > li').filter('.list-item').css('background-color', 'gray');
+
+    $('#list1 li:odd').css('text-decoration', 'line-through');
+    $('#list1 li:even').css('text-decoration', 'underline');
+    $('#list1 li:first').css('background-color', 'olive');
+    $('#list1 li:last').css('background-color', 'green');
+    $('#list1 li:not(.list-item)').css('background-color', 'red');
+
+</script>
+    </footer>
+</body>
+</html>

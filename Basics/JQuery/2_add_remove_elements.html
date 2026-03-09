@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery selectors and traversing</title>
+  </head>
+  <body>
+    <main>
+        <h1>jQuery selectors and traversing</h1>
+      <div class="container" id="cont1">Container ONE
+      </div>
+      <div class="container" id="cont2">Container TWO</div>
+      <div class="container" id="cont3">Container THREE</div>
+      <div class="container" id="cont4">Container FOUR</div>
+    </main>
+
+    <footer>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script>
+        const css = {
+            "background-color" : "lightgreen",
+            "height" : "200px",
+            "margin" : "5px",
+            "border" : "1px solid black"
+        }
+        $('.container').css(css);
+        const cont1 = $('#cont1');
+
+
+        cont1.append('<p>This is appended using .append()</p>').prepend('<p>This is prepended using .prepend()</p>');
+        cont1.after('<p>This is inserted using .after()</p>').before('<p>This is inserted using .before()</p>');
+        // cont1.empty();
+        // cont1.remove();
+
+        const cloned = cont1.clone();
+        $('main').append(cloned);
+
+
+        $('#cont2').replaceWith('<div> <h3>Replaced element</h3></div>');
+
+        $('<h3>Inserted using insertAfter()</h3>').insertAfter('#cont3');
+        $('<h3>Inserted using insertBefore()</h3>').insertBefore('#cont3');
+
+
+        $('h1').wrap('<div style="background-color : cyan"></div>');
+        // $('h1').unwrap();
+
+      </script>
+    </footer>
+  </body>
+</html>
