@@ -1,1 +1,49 @@
-Temp text
+🔵 1. OOP in JavaScript (Deep Understanding)
+⏳ OOP principles
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+⏳ Prototypal inheritance (deep internal behavior)
+⏳ Constructor-based OOP (patterns & pitfalls)
+⏳ ES6 Classes (under the hood)
+⏳ extends and super
+⏳ Method overriding (Polymorphism)
+⏳ Private fields (#)
+⏳ Static methods
+⏳ Mixins
+⏳ Composition vs Inheritance (very important for senior roles)
+⏳ Class-based vs Prototype-based comparison
+🔵 2. Functions Deep Dive (VERY IMPORTANT)
+⏳ First-class functions
+⏳ Higher-order functions (HOFs)
+⏳ Pure vs Impure functions
+⏳ Function composition
+⏳ call, apply, bind (deep + edge cases)
+⏳ IIFE
+⏳ Recursion (advanced patterns)
+🔵 3. Arrays & Functional Programming
+⏳ Deep dive into array methods (map, filter, reduce, etc.)
+⏳ Immutable operations (real-world usage)
+⏳ Chaining patterns
+⏳ Performance considerations (VERY important for interviews)
+⏳ Complex transformations (grouping, flattening, pipelines)
+🔵 4. Asynchronous JavaScript (Advanced)
+⏳ Concurrency vs Parallelism (important conceptually)
+⏳ Async execution patterns
+Sequential vs Parallel
+⏳ Error propagation in async flows
+⏳ Retry mechanisms
+⏳ Timeout & cancellation patterns
+🔵 5. Advanced / Senior-Level Concepts
+⏳ Memory management & Garbage Collection
+⏳ Event delegation (DOM + architecture relevance)
+⏳ Performance optimization techniques
+⏳ Deep cloning strategies (real-world safe cloning)
+⏳ Immutability patterns (Redux-level thinking)
+⏳ Design patterns
+Factory
+Singleton
+Observer
+Module
+Strategy (recommended)
