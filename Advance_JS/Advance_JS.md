@@ -10,6 +10,9 @@
     
 ### Closures:
     - the functions defined in a function which has the access to the outer scope
+    - retains the variables even after the outer function's execution
+    - retains only the ones getting used in the inner function
+    - variables will get garbage collected only when no function references them
     - to declare the private variables
     - implemet separate lexical scope (scope of declaration - not execution) for each declaration
     - Class alternatives
