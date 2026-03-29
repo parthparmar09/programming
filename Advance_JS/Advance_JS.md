@@ -1,3 +1,7 @@
+### Lexical Scope:
+    - accessibility of variables detemined by their physical location
+    - Global, Function, Block
+
 ### Hoisting:
     - JS behaviour - moves the declarations at the top - calling before initializing
     - `var` - hoisted but not initialized - undefined
@@ -12,17 +16,17 @@
 
     ```
         const closureFn = () => {
-        const obj = {
-            name : 'parth',
-            age : 23
-        }
+            const obj = {
+                name : 'parth',
+                age : 23
+            }
 
-        const innerFn = () => {
-            obj.age = obj.age + 10;
-            console.log(obj);
-        }
+            const innerFn = () => {
+                obj.age = obj.age + 10;
+                console.log(obj);
+            }
 
-        return innerFn;
+            return innerFn;
         }
 
 
@@ -159,3 +163,4 @@
 | **Conversions**   | Must be **explicit** (`parseInt("5")`) | Happens **automatically** (`"5" * 2 → 10`) |
 | **Safety**        | Safer, fewer surprises                 | More flexible but error-prone              |
 | **Examples**      | Java, Python, C#                       | JavaScript, PHP                            |
+
