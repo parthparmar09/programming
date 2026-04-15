@@ -167,3 +167,12 @@
 | **Safety**        | Safer, fewer surprises                 | More flexible but error-prone              |
 | **Examples**      | Java, Python, C#                       | JavaScript, PHP                            |
 
+## Memory Management & Garbage Collection
+    - JavaScript automatically allocates and frees memory using Garbage Collection
+    - Mark-and-Sweep Algorithm
+        - Root objects (global, stack) are marked
+        - Anything reachable → kept
+        - Anything unreachable → removed
+    - Memory Leaks
+        - Caches, Global Vars, Event listeners not removed, Closures holding references
+        - Nullify unused variables, remove event listeners, clear intervals/timeouts

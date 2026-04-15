@@ -25,7 +25,7 @@
     - call(thisArg, arg1, arg2, ...): sets this explicitly - executes immediately
     - apply(thisArg, [arg1, arg2, ...]): same as call() but with an array of arguments
     - bind(thisArg, arg1, arg2, ...): doesn't run immediately, returns a fn with bound `this`
-    - missing params automatically become undefined and extra ones will be ignored
+        * missing params automatically become undefined and extra ones will be ignored
 
 ### Retry mechanisms:
     ```
@@ -66,10 +66,52 @@
         //doesn't stop async fn - just prevents further execution
         let cancelled = false;
         async function task() {
-        if (cancelled) return;
-        const data = await fetchData();
-        if (cancelled) return;
-        console.log(data);
+            if (cancelled) return;
+            const data = await fetchData();
+            if (cancelled) return;
+            console.log(data);
         }
         cancelled = true;
+    ```
+
+## Performance Optimisation Techniques:
+    ```
+        // Debouncing - delay execution until user stops action - in auto search boxes
+        function debounce(fn, delay) {
+            let timer;
+            return function(...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => fn(...args), delay);
+            };
+        }
+
+        // Throttling - limit execution rate
+        function throttle(fn, limit) {
+            let lastCall = 0;
+            return function(...args) {
+                const now = Date.now();
+                if (now - lastCall >= limit) {
+                lastCall = now;
+                fn(...args);
+                }
+            };
+        }
+
+        // Memoization - caching return values - using closure functions
+        function memoize(fn) {
+            const cache = {};
+
+            return function(...args) {
+                const key = JSON.stringify(args);
+
+                if (key in cache) {
+                return cache[key];
+                }
+
+                const result = fn.apply(this, args);
+                cache[key] = result;
+
+                return result;
+            };
+        }
     ```

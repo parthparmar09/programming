@@ -42,8 +42,8 @@ Sequential vs Parallel
 ⏳ Deep cloning strategies (real-world safe cloning)
 ⏳ Immutability patterns (Redux-level thinking)
 ⏳ Design patterns
-Factory
-Singleton
-Observer
-Module
-Strategy (recommended)
+    Factory
+    Singleton
+    Observer
+    Module
+    Strategy (recommended)
