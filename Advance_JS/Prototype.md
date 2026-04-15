@@ -2,8 +2,9 @@
     - Mechanism to inherit features in JS
     - Every object's hidden property - `__proto__`
     - `__proto__` refers to the parent's `prototype` property
-    - `prototype` - exists on the `classes` or `constructor `functions` only
+    - `prototype` - exists on the `classes` or `constructor functions` only
     - used for inheritance when we create objects using new - copies the prototype in the __proto__
+    - `constructor functions` can return values - By default `this` is returned, if primitive is returned then ignored, if object is returned it replaces `this` and the link will break, won't be an instance of the constructor function.
 
 ### Prototype vs __proto__
     - `prototype` → property on functions (used only when creating objects with new).
@@ -15,22 +16,24 @@
     - Object is the last in the chain - it doesn't have prototype but has getters and setters
 
 ### Inheritance
-    - Object.create(proto)/extends - creates new obj with given prototype
+    - Object.create(proto , {obj})/extends - creates new obj with given prototype and properties
     - Object.getPrototypeOf(obj) and .setPrototypeOf(obj, proto) - to work with prototypes instead of directly using __proto__
     
     ```
-        function Dog(name) {
+        function Dog(name, breed) {
             Animal.call(this, name); // call parent constructor
-            }
-            Dog.prototype = Object.create(Animal.prototype); // link to parent prototype
-            Dog.prototype.constructor = Dog;
+            this.breed = breed;
+        }
 
-            Dog.prototype.speak = function () {
+        Dog.prototype = Object.create(Animal.prototype); // link to parent prototype
+        Dog.prototype.constructor = Dog;
+
+        Dog.prototype.speak = function () {
             console.log(this.name + " barks");
-            };
+        };
 
-            const dog = new Dog("Bruno");
-            dog.speak(); // "Bruno barks"
+        const dog = new Dog("Bruno", "Golden");
+        dog.speak(); // "Bruno barks"
     ```
 
 ### Key Points:
